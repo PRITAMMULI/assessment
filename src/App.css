@@ -1,38 +1,350 @@
-.App {
-  text-align: center;
+body {
+  background-color: #eaedf2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search_bar {
+  border: none;
+  min-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar_back {
+  background-color: #ffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search_icon {
+  position: relative;
+  color: gray;
+  top: 9px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 1px;
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: gray;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.import {
+  background-color: #3c337d;
+  text-align: end;
+}
+
+.export {
+  background-color: #e72c79;
+}
+
+.category {
+  color: #000;
+  background-color: #d5d6d9;
+}
+
+.break_drums {
+  margin-top: 10px;
+}
+
+.sidebar {
+  min-height: 400px;
+  background-color: blue;
+  width: 60px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 30px 0 50px 15px;
+}
+
+.sidebar_icon {
+  margin: 10px 0 10px 0;
+  transform: scale(1.3);
+}
+
+.add_new_projects {
+  text-align: end;
+}
+
+.projecticon {
+  height: 140px;
+}
+
+.add_user_button {
+  background-color: #5d48e3;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.set_target_button {
+  background-color: transparent;
+  border: 2px solid #b6acf2;
+  color: #b6acf2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 992px) {
+  .add_user_button {
+    width: 105%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .set_target_button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .more_icon {
+    margin-top: 10px;
   }
 }
+.more_icon {
+  text-align: center;
+  background-color: #eaedf2;
+}
+
+.finance_app_section {
+  border-bottom: 2px dashed #e5dfdf;
+  margin-bottom: 10px;
+}
+
+.due_date {
+  color: #c3c3c3;
+}
+
+.remaining_days {
+  color: #8070e9;
+}
+
+.phofilephoto {
+  height: 35px;
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
+.Assigned_users_section {
+  margin-top: 20px;
+}
+/* 
+@media screen and (max-width: 768px) {
+  .Assigned_users_section {
+    width: 300px;
+    margin-top: 20px;
+  }
+ 
+  } */
+.assigned_users {
+  border-bottom: 2px dashed #e5dfdf;
+  color: #4e4e4e;
+  padding-bottom: 10px;
+}
+
+.assigned_phofilephoto {
+  border-radius: 10px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.user {
+  /* display: flex */
+  border: 2px solid black;
+}
+
+.email {
+  color: #c9c1c1;
+}
+
+.view_all_users {
+  background-color: #e72c79;
+  color: white;
+}
+
+/* .menubar_menues_items {
+  margin-left: 25px;
+}
+
+.menubar_menues {
+  border-radius: 10px;
+} */
+
+.activity_card {
+  margin-top: 20px;
+}
+
+.calender_icon {
+  height: 40px;
+  width: 50px;
+}
+
+.date {
+  text-align: end;
+}
+
+.date_buttons {
+  margin-left: 10px;
+}
+
+.today_date {
+  background-color: #5e4ae3;
+  color: white;
+}
+
+.other_dates {
+  border: 2px solid #d3d3d3;
+  margin-left: 10px;
+  color: #d3d3d3;
+}
+
+.horizontal_line {
+  border-bottom: 2px solid #d3d3d3;
+  margin-top: 10px;
+}
+
+.ProfilePhoto {
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 50px;
+}
+
+.ProfilePhoto1 {
+  margin-left: -20px;
+}
+
+.ProfilePhoto2 {
+  margin-left: -20px;
+}
+
+.finance {
+  margin-left: 15px;
+  background-color: #7eb357;
+  color: #ffff;
+}
+
+.profile_photo {
+  border: 2px solid black;
+}
+
+.finance_card {
+  border: 1px dotted gray;
+}
+
+.inprogress_button {
+  background-color: #ffe0ed;
+  color: #f69cc1;
+}
+
+.today_date_button {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.inprogress_button1 {
+  margin-left: 85px;
+}
+
+.files_upladed {
+  margin-top: 20px;
+}
+
+.uplaoded_images {
+  min-height: 125px;
+  max-height: 125px;
+}
+
+.icons {
+  color: #b1b2b3;
+  background-color: #eaedf2;
+  transform: scale(1.2);
+  margin-top: 10px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 577px) {
+  .status_line h1 {
+    margin-left: 10px;
+    border-left: 2px dashed #b1b2b3;
+    min-height: 275px;
+  }
+}
+
+@media only screen and (min-width: 578px) and (max-width: 767px) {
+  .status_line h1 {
+    margin-left: 10px;
+    border-left: 2px dashed #b1b2b3;
+    min-height: 330px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .status_line h1 {
+    margin-left: 10px;
+    border-left: 2px dashed #b1b2b3;
+    min-height: 260px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .status_line h1 {
+    margin-left: 10px;
+    border-left: 2px dashed #b1b2b3;
+    min-height: 260px;
+  }
+
+  .menu_items {
+    margin-left: 73%;
+  }
+}
+
+.status_line h2 {
+  margin-left: 10px;
+  border-left: 2px dashed #b1b2b3;
+  min-height: 190px;
+}
+
+.status_line h3 {
+  margin-left: 10px;
+  border-left: 2px dashed #b1b2b3;
+  min-height: 40px;
+}
+
+.files_uploaded_card {
+  border: 2px dashed #b1b2b3;
+}
+
+.files_uploaded_icon {
+  /* padding: 20px 0 0 10px; */
+  background-color: #FFDDD9;
+  border-radius: 50px;
+  transform: scale(1.2);
+  min-height: 35px;
+  max-height: 35px;
+  padding: 5px;
+  margin: 20px 5px 0 10px;
+}
+
+.files_uploaded_card p {
+   margin-top: 20px;
+}
+
+ 
